@@ -10,7 +10,7 @@ def bubble_sort(li):
                 exchange = True
         print(li)
         if not exchange:
-            return li
+            return 
 
 
 # li = [random.randint(0, 10000) for i in range(10000)]

@@ -15,7 +15,7 @@ def quick(list, left, right):
         while low < high and list[low] < middle:
             low += 1
         list[high] = list[low]
-        # 退出时low==high
+    # 退出时low==high
     list[low] = middle
 
     quick(list, left, low - 1)

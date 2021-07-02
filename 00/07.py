@@ -24,7 +24,7 @@ def merge(list):
 
 
 if __name__ == '__main__':
-    li = [9, 56, 4, 3, 45, 455, 44]
+    li = [9, 56, 4, 3]
     print(li)
     sort = merge(li)
     print(sort)
