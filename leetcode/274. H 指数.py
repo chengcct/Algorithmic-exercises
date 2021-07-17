@@ -12,5 +12,15 @@ class Solution:
                 return n - i
 
 
-ret = Solution()
+class Solution1:
+    def hIndex(self, citations: List[int]) -> int:
+        citations.sort(reverse=True)
+        for i in range(len(citations)):
+            if citations[i] < i + 1:
+                return i
+        else:
+            return len(citations)
+
+
+ret = Solution1()
 print(ret.hIndex([3, 0, 6, 1, 5]))
