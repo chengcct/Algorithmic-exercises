@@ -7,16 +7,16 @@ class Node:
         self.random = random
 """
 
-class Solution:
-    def copyRandomList(self, head: 'Node') -> 'Node':
-        if node is None:
-            return None
-        if node in Mydic:
-            return Mydic.get(node)
-        root = Node(node.val)
-        Mydic[node] = root
-        root.next = recursion(node.next)
-        root.random = recursion(node.random)
-        return root
-
-    return recursion(head)
+# class Solution:
+#     def copyRandomList(self, head: 'Node') -> 'Node':
+#         if node is None:
+#             return None
+#         if node in Mydic:
+#             return Mydic.get(node)
+#         root = Node(node.val)
+#         Mydic[node] = root
+#         root.next = recursion(node.next)
+#         root.random = recursion(node.random)
+#         return root
+#
+#     return recursion(head)
