@@ -10,5 +10,6 @@ class Solution:
         return tmp
 
 
-ret = Solution()
-print(ret.climbStairs(4))
+if __name__ == '__main__':
+    s = Solution()
+    print(s.climbStairs(5))

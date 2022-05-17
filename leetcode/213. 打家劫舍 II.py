@@ -22,12 +22,6 @@ class Solution:
             return 0
         if len(nums) == 1:
             return nums[0]
-
-        """
-        我们可以把题目分成两个部分
-        在 [0:n-1] 中找到最大值
-        在 [1:n] 中找到最大值
-        """
         nums1 = nums[1:]
         nums2 = nums[0:len(nums) - 1]
         return max(rob_max(nums1), rob_max(nums2))
